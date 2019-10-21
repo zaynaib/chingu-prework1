@@ -3,12 +3,22 @@ header{
     justify-content: space-between;
 }
 
+/*
 #minorNav ul{
-    list-style:none;
-    padding:0;
-    margin:0;
+    list-style-type:none;
 }
+*/
+
 
 #minorNav > li{
     display:inline-block;
+    margin-right: 1em;
+
 }
+
+#minorNav> li > a:link{
+    text-decoration: none;
+    color:gray;
+
+}
+
