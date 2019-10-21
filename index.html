@@ -2,12 +2,12 @@
 <html>
     <head>
         <title>Google Font </title>
-        <link rel="stylesheet" href="cs/style.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
 
     </head>
 
     <body>
-        <header>
+        <header id="minorNav">
             <h1>Google Fonts</h1>
 
             <ul>
@@ -19,23 +19,37 @@
 
         </header>
 
-        <section>
+        <section id="majorNav">
+
+            <input type="text" id="search" placeholder="Search fonts">
 
             <input type="text" id="fontText" placeholder="Type Something">
 
             <input type="number" id="fontSize">
 
+            <button>DARK MODE</button>
+            <button>LIGHT MODE</button>
+
+            <button>GRID/LIST MODE</button>
+            <button>RESET</button>
+
         </section>
 
-        <section>
-            <div>
+        <section id="fonts">
+            <div class="card">
+
+                <hr>
                 <p>Roboto</p>
+                <p>Chrisitan Robertson</p>
+                <button>Plus Sign</button>
+
                 <p id="changeText"></p>
-            </div>
+
+            </div> <!--End of Card-->
         </section>
 
         <footer>
-
+            <p>coded by Ola | 2019| Chingu Pre-Work</p>
         </footer>
       
 
