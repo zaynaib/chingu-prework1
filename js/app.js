@@ -4,20 +4,13 @@
 
 //grab users inputs
 
-//grab fonttext id
 let fontText = document.getElementById("fontText");
-
-//grab fontsize id
 let textSize = document.getElementById("fontSize");
-
-//grab the text that will be changed
 let text = document.getElementById("changeText");
-
-
 
 //methods
 
-//Takes text that the user inputs on to the html screen;
+//Takes text that the user inputs on to the html screen
 
 let changingText = function(){
     text.innerHTML = fontText.value;
@@ -32,11 +25,8 @@ let changingSize = function(){
 
 //event listeners
 
-
-
 fontText.addEventListener('change',changingText);
 textSize.addEventListener('change',changingSize);
 
 
 
-//change the dom to reflect changetext id div
