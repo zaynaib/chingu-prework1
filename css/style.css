@@ -3,12 +3,15 @@ header{
     justify-content: space-between;
 }
 
-/*
-#minorNav ul{
-    list-style-type:none;
+h1{
+ font-size: 20px;
+ color:gray;
 }
-*/
 
+#google{
+    font-weight:bold;
+    color:darkgray;
+}
 
 #minorNav > li{
     display:inline-block;
@@ -22,3 +25,25 @@ header{
 
 }
 
+#majorNav{
+    display:flex;
+    justify-content: space-around;
+    border-style:solid;
+    color:lightgray;
+    border-radius:2em;
+}
+
+input[type=text]{
+    border:none;
+    border-right-style: solid;
+
+}
+.card{
+    border:solid;
+    width: 25%;
+}
+
+footer{
+    display:flex;
+    justify-content: center;
+}
