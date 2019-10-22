@@ -1,13 +1,4 @@
 /*
-
-========================================CSS RESET========================================
-
-
-*/
-
-
-
-/*
 ===============================Minor Navigation=======================================
 
 */
@@ -102,4 +93,13 @@ input[type=text]{
 footer{
     display:flex;
     justify-content: center;
+}
+
+/* ========================================Media Queries===========================*/
+
+@media screen and (max-width:  600px){
+    #fonts{
+        display:flex;
+        flex-direction: column;
+    }
 }
