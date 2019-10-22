@@ -7,45 +7,72 @@
     </head>
 
     <body>
-        <header id="minorNav">
-            <h1>Google Fonts</h1>
+        <header >
+            <h1><span id="google">Google</span> Fonts</h1>
 
-            <ul>
-                <li>CATALOG</li>
-                <li>FEATURED</li>
-                <li>ARTICLES</li>
-                <li>ABOUT</li>
+
+            <ul id="minorNav">
+                <li><a href="#">CATALOG</a></li>
+                <li><a href="#">FEATURED</a></li>
+                <li><a href="#">ARTICLES</a></li>
+                <li><a href="#">ABOUT</a></li>
             </ul>
 
         </header>
+        <hr>
 
         <section id="majorNav">
+            <div id="userInputs">
+                <input type="text" id="search" placeholder="Search fonts">
 
-            <input type="text" id="search" placeholder="Search fonts">
+                <input type="text" id="fontText" placeholder="Type Something">
 
-            <input type="text" id="fontText" placeholder="Type Something">
+                <input type="number" id="fontSize">
 
-            <input type="number" id="fontSize">
+                <button>DARK MODE</button>
+                <button>LIGHT MODE</button>
 
-            <button>DARK MODE</button>
-            <button>LIGHT MODE</button>
-
-            <button>GRID/LIST MODE</button>
-            <button>RESET</button>
+                <button>GRID/LIST MODE</button>
+                <button>RESET</button>
+            </div>
 
         </section>
 
         <section id="fonts">
+            <div class="contianer">
+                <div class="card">
+                    <div class ="metaData">
+                        <p class="fontType">Roboto</p>
+                        <p class="author">Christan Robinson</p>
+
+
+                    </div>
+
+                    <button class="add"> Add Something</button>
+
+                </div>
+                <p id="changeText">Hi</p>
+
+
+            </div>
+
             <div class="card">
+                    <div class ="title">
+                        <p class="fontType">Roboto</p>
+                        <button class="add"> Add Something</button>
+                    </div>
+                    <p class="author">Christan Robinson</p>
+    
+                </div>
 
-                <hr>
-                <p>Roboto</p>
-                <p>Chrisitan Robertson</p>
-                <button>Plus Sign</button>
-
-                <p id="changeText"></p>
-
-            </div> <!--End of Card-->
+                <div class="card">
+                        <div class ="title">
+                            <p class="fontType">Roboto</p>
+                            <button class="add"> Add Something</button>
+                        </div>
+                        <p class="author">Christan Robinson</p>
+        
+                    </div>
         </section>
 
         <footer>

@@ -1,0 +1,105 @@
+/*
+
+========================================CSS RESET========================================
+
+
+*/
+
+
+
+/*
+===============================Minor Navigation=======================================
+
+*/
+header{
+    display:flex;
+    justify-content: space-between;
+}
+
+h1{
+ font-size: 20px;
+ color:gray;
+}
+
+#google{
+    font-weight:bold;
+    color:darkgray;
+}
+
+
+#minorNav > li{
+    display:inline-block;
+    margin-right: 1em;
+
+}
+
+#minorNav> li > a:link{
+    text-decoration: none;
+    color:gray;
+
+}
+
+/*=========================================Major Navigation=======================*/
+#majorNav{
+    display:flex;
+    justify-content: space-around;
+    border-style:solid;
+    color:lightgray;
+    border-radius:2em;
+}
+
+input[type=text]{
+    border:none;
+    border-right-style: solid;
+
+}
+
+/*========================================= Title Card ====================================*/
+
+
+#fonts{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contianer{
+    border:solid;
+    border-color: pink;
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    border:solid;
+    width:400px;
+}
+
+
+/*
+.title{
+    border:solid;
+    border-color:pink;
+    display:flex;
+    justify-content: space-around;
+}
+
+.fontType{
+    margin-bottom:0.5em;
+    font-weight: 600;
+}
+
+.author{
+    margin:0;
+    padding:0;
+    font-weight: 300;
+    color:grey;
+}
+
+.add{
+    display: inline;
+}
+*/
+/* ========================================= Footer =================================================*/
+footer{
+    display:flex;
+    justify-content: center;
+}
