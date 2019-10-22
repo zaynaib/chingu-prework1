@@ -1,4 +1,13 @@
 /*
+
+========================================CSS RESET========================================
+
+
+*/
+
+
+
+/*
 ===============================Minor Navigation=======================================
 
 */
@@ -47,23 +56,33 @@ input[type=text]{
 
 /*========================================= Title Card ====================================*/
 
+
 #fonts{
     display: flex;
     justify-content: space-around;
 }
-.card{
+
+.contianer{
     border:solid;
-    width:25%;
+    border-color: pink;
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    border:solid;
+    width:400px;
 }
 
-.metaData{
+
+/*
+.title{
     border:solid;
     border-color:pink;
     display:flex;
     justify-content: space-around;
 }
 
-.title{
+.fontType{
     margin-bottom:0.5em;
     font-weight: 600;
 }
@@ -78,7 +97,7 @@ input[type=text]{
 .add{
     display: inline;
 }
-
+*/
 /* ========================================= Footer =================================================*/
 footer{
     display:flex;
