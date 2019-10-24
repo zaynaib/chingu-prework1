@@ -2,6 +2,10 @@
 ===============================Minor Navigation=======================================
 
 */
+* {
+    box-sizing: border-box;
+}
+
 header{
     display:flex;
     justify-content: space-between;
@@ -31,37 +35,61 @@ h1{
 }
 
 /*=========================================Major Navigation=======================*/
-#majorNav{
+#userInputs {
     display:flex;
-    justify-content: space-around;
     border-style:solid;
     color:lightgray;
     border-radius:2em;
+    overflow: hidden;
 }
 
-input[type=text]{
+#userInputs .in {
     border:none;
+    padding: 4px 16px;
     border-right-style: solid;
+    flex: 1 0 150px;
+    min-width: 0;
+}
 
+#userInputs button {
+    background: white;
+    border: none;
+    padding: 4px;
+    flex: 0 0 75px;
+    cursor: pointer;
+}
+
+#userInputs button:hover,
+#userInputs button:focus {
+    background: #EEE;
 }
 
 /*========================================= Title Card ====================================*/
 
 
-#fonts{
-    display: flex;
-    justify-content: space-around;
-}
 
-.contianer{
+.container{
     border:solid;
     border-color: pink;
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4px;
 }
 .card{
-    display: flex;
-    justify-content: space-around;
     border:solid;
-    width:400px;
+    flex-basis: 300px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.card .add {
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 
 
