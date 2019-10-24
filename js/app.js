@@ -1,6 +1,6 @@
 //reference text: https://www.sitepoint.com/dom-manipulation-vanilla-javascript-no-jquery/
 
-let families = ["Lato","Roboto","Oswald"];
+let families = ["Indie Flower","Roboto","Fascinate Inline","Jomolhari","Liu Jian Mao Cao","Modak"];
 
 //variables
 
@@ -37,7 +37,7 @@ var makeCard = function(family) {
         <p class="fontType">${family}</p>
         <p class="author"></p>    
     </div>
-    <p class="changeText" contentEditable style="font-family:${family}">Hi</p>
+    <p class="changeText" contentEditable style="font-family:${family}">Then came the night of the first falling star.</p>
     
 
     <button class="add">+</button>
@@ -52,8 +52,9 @@ function render() {
 }
 
 render();
-
+/*
 setTimeout(function() {
     families.push("Lobster");
     render();
 }, 3000);
+*/
