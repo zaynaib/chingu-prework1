@@ -5,10 +5,15 @@ let families=[{name:"Fascinate Inline",author:"Astigmatic"},{name:"Indie Flower"
                 ,{name:"Roboto",author:"Christian Robertson"},{name:"Jomolhari",author:"Christopher J. Fynn"}
                 ,{name:"Liu Jian Mao Cao",author:"Liu Zhengjiang"},{name:"Modak",author:"Ek Type"}]
 
+
+
 //grab users inputs
 
 let fontText = document.getElementById("fontText");
 let textSize = document.getElementById("fontSize");
+let darkMode = document.getElementById("dark");
+let lightMode = document.getElementById("light");
+
 
 //Methods
 
@@ -28,13 +33,23 @@ let changingSize = function(){
     let previews = document.querySelectorAll(".changeText");
     //loop through each of the elements and uses an anonymous function to change the font size based on the user input.
     previews.forEach(text => text.style.fontSize = textSize.value + "px" );
+};
+
+let darkModeColorChange = function(){    
+    console.log("what");
+    document.body.classList.add('darkModeBody');
+}
+
+let lightModeColorChange = function(){    
+    document.body.classList.remove('darkModeBody');
 }
 
 //Event Listeners
 
 fontText.addEventListener('keyup',changingText);
 textSize.addEventListener('keyup',changingSize);
-
+darkMode.addEventListener('click',darkModeColorChange);
+lightMode.addEventListener('click',lightModeColorChange);
 //generates a  html template based on the metadata from google fonts
 let makeCard = function(family) {
     return `
@@ -63,7 +78,6 @@ function render() {
     //joins each of the cards together
     let html = families.map(makeCard).join("");
     container.innerHTML = html;
-    console.log(html)
 }
 
 render();
