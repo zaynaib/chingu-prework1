@@ -63,9 +63,6 @@ let makeCard = function(family) {
     
     <i class="fas fa-plus-circle add"></i>
 
-
-    <!-- <button class="add">+</button>-->
-
 </div>`
 };
 
