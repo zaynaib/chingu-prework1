@@ -46,8 +46,10 @@ let makeCard = function(family) {
     </div>
     <p class="changeText" contentEditable style="font-family:${family.name}">Then came the night of the first falling star.</p>
     
+    <i class="fas fa-plus-circle add"></i>
 
-    <button class="add">+</button>
+
+    <!-- <button class="add">+</button>-->
 
 </div>`
 };

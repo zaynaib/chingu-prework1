@@ -41,6 +41,7 @@ h1{
     color:lightgray;
     border-radius:2em;
     overflow: hidden;
+    margin-bottom: 25px;
 }
 
 #userInputs .in {
@@ -51,13 +52,15 @@ h1{
     min-width: 0;
 }
 
-#userInputs button {
+.dark, .light, .displayMode ,.undo {
     background: white;
     border: none;
     padding: 4px;
-    flex: 0 0 75px;
+    flex: 0 0 2%;
     cursor: pointer;
 }
+
+
 
 #userInputs button:hover,
 #userInputs button:focus {
@@ -69,20 +72,19 @@ h1{
 
 
 .container{
-    border:solid;
-    border-color: pink;
-    /* display: flex; */
+    /* display: flex; 
     flex-wrap: wrap;
     justify-content: space-between;
+    */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 4px;
+    grid-gap: 15px;
 }
 .card{
-    border:solid;
-    flex-basis: 300px;
+    border-top-style:solid;
+   /* flex-basis: 300px;
     flex-grow: 0;
-    flex-shrink: 0;
+    flex-shrink: 0;*/
     position: relative;
 }
 
@@ -90,33 +92,15 @@ h1{
     position: absolute;
     top: 5px;
     right: 5px;
+    color:red;
+    cursor: pointer;
+
 }
 
-
-/*
-.title{
-    border:solid;
-    border-color:pink;
-    display:flex;
-    justify-content: space-around;
-}
-
-.fontType{
-    margin-bottom:0.5em;
-    font-weight: 600;
-}
 
 .author{
-    margin:0;
-    padding:0;
-    font-weight: 300;
-    color:grey;
+    color:darkgray;
 }
-
-.add{
-    display: inline;
-}
-*/
 /* ========================================= Footer =================================================*/
 footer{
     display:flex;
@@ -126,8 +110,13 @@ footer{
 /* ========================================Media Queries===========================*/
 
 @media screen and (max-width:  600px){
-    #fonts{
+    .container{
         display:flex;
         flex-direction: column;
     }
+
+    #userInputs .icon{
+        display:none;
+    }
+
 }
