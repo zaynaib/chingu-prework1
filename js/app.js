@@ -1,7 +1,8 @@
 //reference text: https://www.sitepoint.com/dom-manipulation-vanilla-javascript-no-jquery/
 
-let families = ["Indie Flower","Roboto","Fascinate Inline","Jomolhari","Liu Jian Mao Cao","Modak"];
-
+let families=[{name:"Fascinate Inline",author:"Astigmatic"},{name:"Indie Flower",author:"Kimberly Flower"}
+                ,{name:"Roboto",author:"Christian Robertson"},{name:"Jomolhari",author:"Christopher J. Fynn"}
+                ,{name:"Liu Jian Mao Cao",author:"Liu Zhengjiang"},{name:"Modak",author:"Ek Type"}]
 //variables
 
 //grab users inputs
@@ -31,13 +32,13 @@ textSize.addEventListener('keyup',changingSize);
 
 var makeCard = function(family) {
     return `
-<link href="https://fonts.googleapis.com/css?family=${family}&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=${family.name}&display=swap" rel="stylesheet">
 <div class="card">
     <div class ="metaData">
-        <p class="fontType">${family}</p>
-        <p class="author"></p>    
+        <p class="fontType">${family.name}</p>
+        <p class="author">${family.author}</p>    
     </div>
-    <p class="changeText" contentEditable style="font-family:${family}">Then came the night of the first falling star.</p>
+    <p class="changeText" contentEditable style="font-family:${family.name}">Then came the night of the first falling star.</p>
     
 
     <button class="add">+</button>
