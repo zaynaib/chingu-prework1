@@ -23,6 +23,11 @@ let isListLayout = false;
 let changeLayout = function(){
     if(!isListLayout){
         containerLayout.classList.add("listLayout");
+        displayButton.classList.add("fa-table");
+        displayButton.classList.remove("fa-list");
+
+
+
         console.log(containerLayout.classList);
         isListLayout = true;
         console.log(isListLayout);
@@ -30,6 +35,8 @@ let changeLayout = function(){
     else{
         isListLayout = false;
         containerLayout.classList.remove("listLayout");
+        displayButton.classList.remove("fa-table");
+        displayButton.classList.add("fa-list");
         console.log(containerLayout.classList);
 
 
