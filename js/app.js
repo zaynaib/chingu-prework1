@@ -23,11 +23,14 @@ let isListLayout = false;
 let changeLayout = function(){
     if(!isListLayout){
         containerLayout.classList.add("listLayout");
+        console.log(containerLayout.classList);
         isListLayout = true;
+        console.log(isListLayout);
     }
     else{
         isListLayout = false;
         containerLayout.classList.remove("listLayout");
+        console.log(containerLayout.classList);
 
 
     }
@@ -55,6 +58,7 @@ let changingSize = function(){
     let previews = document.querySelectorAll(".changeText");
     //loop through each of the elements and uses an anonymous function to change the font size based on the user input.
     previews.forEach(text => text.style.fontSize = textSize.value + "px" );
+    console.log("changing size working")
 };
 
 let resetText = function(){
@@ -63,7 +67,6 @@ let resetText = function(){
 }
 
 let darkModeColorChange = function(){    
-    console.log("what");
     document.body.classList.add('darkModeBody');
 }
 
@@ -74,7 +77,9 @@ let lightModeColorChange = function(){
 //Event Listeners
 
 fontText.addEventListener('keyup',changingText);
+textSize.addEventListener('click',changingSize);
 textSize.addEventListener('keyup',changingSize);
+
 darkMode.addEventListener('click',darkModeColorChange);
 lightMode.addEventListener('click',lightModeColorChange);
 undo.addEventListener('click', resetText);
