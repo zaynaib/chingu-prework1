@@ -1,3 +1,17 @@
+/*!  To Do:
+
+- grid to list
+- add a click event listner
+- remove the fa class and replace it with a square window
+- add fa window class
+- add class to convert it to a list
+- then figure out button
+https://github.com/ming-yong/Algorithm-Practice
+<i class="fas fa-table"></i>
+
+
+
+*/
 
 //Variables
 
@@ -13,6 +27,7 @@ let fontText = document.getElementById("fontText");
 let textSize = document.getElementById("fontSize");
 let darkMode = document.getElementById("dark");
 let lightMode = document.getElementById("light");
+let undo = document.getElementById("undo");
 
 
 //Methods
@@ -35,6 +50,11 @@ let changingSize = function(){
     previews.forEach(text => text.style.fontSize = textSize.value + "px" );
 };
 
+let resetText = function(){
+    let previews = document.querySelectorAll(".changeText");
+    previews.forEach(text => text.innerHTML = "Then came the night of the first falling star." )
+}
+
 let darkModeColorChange = function(){    
     console.log("what");
     document.body.classList.add('darkModeBody');
@@ -50,6 +70,9 @@ fontText.addEventListener('keyup',changingText);
 textSize.addEventListener('keyup',changingSize);
 darkMode.addEventListener('click',darkModeColorChange);
 lightMode.addEventListener('click',lightModeColorChange);
+undo.addEventListener('click', resetText);
+
+
 //generates a  html template based on the metadata from google fonts
 let makeCard = function(family) {
     return `

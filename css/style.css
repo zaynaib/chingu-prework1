@@ -52,7 +52,7 @@ h1{
     min-width: 0;
 }
 
-#dark, #light, .displayMode ,.undo {
+#dark, #light, .displayMode ,#undo {
     background: white;
     border: none;
     padding: 4px;
