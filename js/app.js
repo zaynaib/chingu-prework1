@@ -15,6 +15,27 @@ let darkMode = document.getElementById("dark");
 let lightMode = document.getElementById("light");
 let undo = document.getElementById("undo");
 
+let displayButton = document.getElementsByClassName("displayMode")[0];
+let containerLayout = document.getElementsByClassName("container")[0];
+
+let isListLayout = false;
+
+let changeLayout = function(){
+    if(!isListLayout){
+        containerLayout.classList.add("listLayout");
+        isListLayout = true;
+    }
+    else{
+        isListLayout = false;
+        containerLayout.classList.remove("listLayout");
+
+
+    }
+}
+console.log(containerLayout);
+
+
+
 
 //Methods
 
@@ -57,7 +78,8 @@ textSize.addEventListener('keyup',changingSize);
 darkMode.addEventListener('click',darkModeColorChange);
 lightMode.addEventListener('click',lightModeColorChange);
 undo.addEventListener('click', resetText);
-
+displayButton.addEventListener('click',changeLayout);
+console.log(displayButton);
 
 //generates a  html template based on the metadata from google fonts
 let makeCard = function(family) {

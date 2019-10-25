@@ -92,9 +92,6 @@ h1{
 
 }
 
-
-
-
 .author{
     color:darkgray;
 }
@@ -123,4 +120,9 @@ footer{
 .darkModeBody{
     background-color:black;
     color:white;
+}
+
+/*=============================Toggle Layout======================*/
+.listLayout{
+    grid-template-columns: 1fr;
 }
