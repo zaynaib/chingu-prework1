@@ -1,17 +1,3 @@
-/*!  To Do:
-
-- grid to list
-- add a click event listner
-- remove the fa class and replace it with a square window
-- add fa window class
-- add class to convert it to a list
-- then figure out button
-https://github.com/ming-yong/Algorithm-Practice
-<i class="fas fa-table"></i>
-
-
-
-*/
 
 //Variables
 
@@ -101,9 +87,3 @@ function render() {
 }
 
 render();
-/*
-setTimeout(function() {
-    families.push("Lobster");
-    render();
-}, 3000);
-*/
