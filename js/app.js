@@ -20,34 +20,26 @@ let containerLayout = document.getElementsByClassName("container")[0];
 
 let isListLayout = false;
 
+
+//Methods
+
 let changeLayout = function(){
     if(!isListLayout){
         containerLayout.classList.add("listLayout");
         displayButton.classList.add("fa-table");
         displayButton.classList.remove("fa-list");
 
-
-
-        console.log(containerLayout.classList);
         isListLayout = true;
-        console.log(isListLayout);
     }
     else{
         isListLayout = false;
         containerLayout.classList.remove("listLayout");
         displayButton.classList.remove("fa-table");
         displayButton.classList.add("fa-list");
-        console.log(containerLayout.classList);
-
 
     }
 }
-console.log(containerLayout);
 
-
-
-
-//Methods
 
 //Takes what the user types in and puts it onto the webpage
 let changingText = function(){
