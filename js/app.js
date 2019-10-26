@@ -48,7 +48,15 @@ let changingText = function(){
     let previews = document.querySelectorAll(".changeText");
 
     //loop through each of the elements and uses an anonymous function to change the value to the user input value
-    previews.forEach(text =>  text.innerHTML = fontText.value);
+    previews.forEach(text => 
+         {if(fontText.value === ""){
+             text.innerHTML = "Then came the night of the first falling star.";
+         }else{
+            text.innerHTML = fontText.value;
+
+         }
+         
+         });
 };
 
 //Changes size of the text 
@@ -57,7 +65,7 @@ let changingSize = function(){
     let previews = document.querySelectorAll(".changeText");
     //loop through each of the elements and uses an anonymous function to change the font size based on the user input.
     previews.forEach(text => text.style.fontSize = textSize.value + "px" );
-    console.log("changing size working")
+    console.log("changing size working");
 };
 
 let resetText = function(){
@@ -83,7 +91,6 @@ darkMode.addEventListener('click',darkModeColorChange);
 lightMode.addEventListener('click',lightModeColorChange);
 undo.addEventListener('click', resetText);
 displayButton.addEventListener('click',changeLayout);
-console.log(displayButton);
 
 //generates a  html template based on the metadata from google fonts
 let makeCard = function(family) {
@@ -94,7 +101,7 @@ let makeCard = function(family) {
         <p class="fontType">${family.name}</p>
         <p class="author">${family.author}</p>    
     </div>
-    <p class="changeText" contentEditable style="font-family:${family.name}">Then came the night of the first falling star.</p>
+    <p class="changeText" style="font-family:${family.name}">Then came the night of the first falling star.</p>
     
     <i class="fas fa-plus-circle add"></i>
 
