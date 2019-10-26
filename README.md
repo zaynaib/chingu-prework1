@@ -12,10 +12,12 @@ This website is a [Google Fonts](https://fonts.google.com/) clone showcasing my 
 
 - Reset Fonts Button
 
-- Toggle Between Grid and List Layout(*coming soon*)
+- Toggle Between Grid and List Layout
 
 
 ## How to Run
+
+Project url:  https://zaynaib.github.io/chingu-prework1/
 
  **Local Machine:**
 
