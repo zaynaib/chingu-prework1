@@ -70,7 +70,8 @@ let changingSize = function(){
 
 let resetText = function(){
     let previews = document.querySelectorAll(".changeText");
-    previews.forEach(text => text.innerHTML = "Then came the night of the first falling star." )
+    previews.forEach(text => text.innerHTML = "Then came the night of the first falling star." );
+    fontText.value = ""
 }
 
 let darkModeColorChange = function(){    
