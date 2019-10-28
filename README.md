@@ -20,7 +20,9 @@ This website is a [Google Fonts](https://fonts.google.com/) clone showcasing my 
 
 ## How to Run
 
-Project url:  https://zaynaib.github.io/chingu-prework1/
+**Project url:**
+
+ https://zaynaib.github.io/chingu-prework1/
 
  **Local Machine:**
 
