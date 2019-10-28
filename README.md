@@ -14,6 +14,9 @@ This website is a [Google Fonts](https://fonts.google.com/) clone showcasing my 
 
 - Toggle Between Grid and List Layout
 
+![Pre Work Tier 1 project](chinguDemo.gif "Demo features of Pre-Work Tier 1 project")
+
+
 
 ## How to Run
 
